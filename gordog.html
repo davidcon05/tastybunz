@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GORDOG | BUNZ</title>
+    <meta name="description" content="WXYZr Burger, WXYZr Social Technology">
+    <meta name="author" content="David Contreras">
+ 
+    <!--Mobile First Design Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--General CSS sheet-->
+    <link rel="stylesheet" href="tbstyle.css">
+    <!--Swipper CSS-->
+    <link rel="stylesheet" href="/swiper.css" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y39W54698"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0Y39W54698');
+    </script>  
+</head>
+<body id="home">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <div class="wrapper">
+        <header>
+            <h1 class="logo"><a href="" style="color:#f0541c;">B U N Z</a></h1>
+            <a class="to_nav" href="#primary_nav">Menu</a>
+        </header>
+        <!--Menu Categories-->
+        <article>
+            <h2>Checkout Our Bunz!</h2> 
+            <div class="swiper-container">
+                <!-- Slides -->
+                <div class="swiper-wrapper">
+                    <!--Z Bunz-->
+                    <div class="swiper-slide" style="background-image:url(/img/tb/jalagordog.JPG); background-position: center center; background-size:cover;">
+                    </div>
+                    <!--Bunzilla-->
+                    <div class="swiper-slide" style="background-image:url(/img/tb/gordog.JPG); background-position: center center; background-size:cover;">
+                    </div>
+                </div>
+                 <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div> 
+        </article>
+        <article>
+            <h2 style="font-family: Arial, sans-serif; text-align:left">ADDONS</h2>
+            <p style="font-weight:bold;">
+                Avocado Brioche +1.00<br>
+                Gluten Free Bun +1.50<br>
+                Bacon +1.00<br>
+                Egg +1.00<br>
+                Cheese +1.00<br>
+                Cheese +1.00<br>
+                Avocado +1.50<br>
+            </p>
+            <h3>Don't forget your side and drink!</h3>
+        </article>
+        
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+        <footer>
+            <p>Copyright &copy;2021 WXYZr</p>
+        </footer>
+     
+    </div><!--end wrapper-->
+    <nav id="primary_nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/bunz.html">Burgerz</a></li>
+            <li><a class="active" href="#Home">Gordog</a></li>
+            <li><a href="/sides_drinks.html">Sides and Drinks</a></li>
+            <li class="top"><a href="#home">Top</a></li>
+        </ul>
+    </nav><!--end primary_nav-->
+</body>
+</html>
