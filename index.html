@@ -11,6 +11,8 @@
     <!--General CSS sheet-->
     <link rel="stylesheet" href="tbstyle.css">
     <!--Swipper CSS-->
+    <link rel="stylesheet" href="/swiper.css" />
+    <!--Swipper CSS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--[if lt IE 9]>
@@ -27,17 +29,18 @@
         gtag('config', 'G-0Y39W54698');
     </script>
 </head>
-<body id="home">
+
+<body>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <div class="wrapper">
      
         <header>
-          <h1 class="logo"><a href="" style="color:#f0541c;">B U N Z</a></h1>
-          <a class="to_nav" href="#primary_nav">Menu</a>
+          <h1 class="logo"><a href="" style="color:#e98a3e;">B U N Z</a></h1>
+          <a class="to_nav" href="#menu">Menu</a>
         </header>
         <!--Logo or Premiere Product-->
-        <article>
+        <article id="home">
             <img src="./img/tb/logo.JPG" alt="Bunz: Handcraft Burgers" class="centerImg" style="width:100%;">
             <h2>Welcome to Bunz!</h2> 
             <p style="text-align:center">Our culinary training is in our blood. Our motto is “Fresh and from Scratch.” 
@@ -53,26 +56,144 @@
                 <p style="font-weight: bold">MON - SAT: 11AM - 9PM
                     <br>SUNDAYS: 11AM - 6PM</p> 
         </article>
-        <article>
-        <div class ="container">
-            <div class="center">
-                <button onclick="location.href='/learn.html'" type="button">Learn More</button>
-            </div>
-        </div>
+        <!--Menu Categories-->
+        <article style="background-color:#ecc499">
+            <h2 id="menu">Select an Entree</h2> 
+                <div class="swiper-container">
+                    <!-- Slides -->
+                    <div class="swiper-wrapper">
+                        <!--Z Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/zbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Z Bunz - $7.95</div>
+                        </div>
+                        <!--Bunzilla-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/bunzilla.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Bunzilla - $12.95</div>
+                        </div>
+                        <!--Show Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/showbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Show Bunz - $9.95</div>
+                        </div>
+                        <!--Bunzai-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/bunzai.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Bunzai - $9.95</div>
+                        </div>
+                        <!--Cheek Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/cheekbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Cheek Bunz - $9.95</div>
+                        </div>
+                        <!--Mercedes Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/mercedesbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Mercedes Bunz - $9.95</div>
+                        </div>
+                        <!--Vegan Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/veganbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Vegan Bunz - $13.95</div>
+                        </div>
+                        <!--Ocean Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/oceanbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Ocean Bunz - $12.95</div>
+                        </div>
+                        <!--Beach Bunz-->
+                        <div class="swiper-slide" style="background-image:url(./img/tb/beachbunz.png); background-position: center center; background-size:cover;">
+                            <div class="text" style="text-align: center;">Beach Bunz - $13.95</div>
+                        </div>
+                    </div>
+                     <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                    <br><br>
+                </div> 
+            <h2 style="font-family: Arial, sans-serif; text-align:left">ADDONS</h2>
+            <p style="font-weight:bold;">
+                Avocado Brioche +1.00<br>
+                Gluten Free Bun +1.50<br>
+                Bacon +1.00<br>
+                Egg +1.00<br>
+                Cheese +1.00<br>
+                Avocado +1.50<br>
+            </p>
         </article>
-        <footer>
+        <article>
+            <h2>Swipe a Side</h2> 
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="background-image:url(./img/tb/chilifries.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Chili Fries - $6.50</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/bombfries.JPG); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Bombardier Fries - $6.50</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/chilibowl.JPG); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Chili Bowl - $3.50</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/salad.JPG); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Salad - $2.95</div>
+                    </div>
+                </div>
+                <!-- Swiper Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div> 
+        </article>
+        <!--Drinks-->
+        <article style="background-color:#e98a3e">
+            <h2>Pick Your Drink</h2> 
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="background-image:url(./img/tb/churroshake.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Caramel Churro Shake - $6.50</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/strawberryshake.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Strawberry Shake - $6.50</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/tb/nutellashake.png); background-position: center center; background-size:cover;">
+                        <div class="text" style="text-align: center;">Pretzel Nutella - $6.50</div>
+                    </div>
+                </div>
+                <!-- Swiper Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <h2 style="font-family: Arial, sans-serif; text-align:left">DRINKS</h2>
+            <p style="font-weight:bold;">
+                Fountain Drinks $1.95<br>
+                Iced Tea +1.95<br>
+                Draft Beer $4.95<br>
+            </p>
+        </article>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+    
+                pagination: {
+                    el: '.swiper-scrollbar',
+                    type: 'progressbar',
+                    },
+                });
+            </script>
+        <article>
+            <p style="text-align:center"> Thanks for Dining with Us. <br>Just share your order with our staff and we'll have it out as soon as possible.</p>
+        </article>
+        <footer style="background-color:#1c1c1c; color:white">
             <p>Copyright &copy;2021 WXYZr</p>
         </footer>
      
     </div><!--end wrapper-->
-    <nav id="primary_nav">
-        <ul>
-            <li><a class="active" href=#Home>Home</a></li>
-            <li><a href="/bunz.html">Burgerz</a></li>
-            <li><a href="/gordog.html">Gordog</a></li>
-            <li><a href="/sides_drinks.html">Sides and Drinks</a></li>
-            <li class="top"><a href="#home">Top</a></li>
-        </ul>
-    </nav><!--end primary_nav-->
+
 </body>
 </html>
